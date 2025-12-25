@@ -60,6 +60,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Elements\Leader\LeaderControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Elements\Supplier\SupplierControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -77,6 +81,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Document\ListDocument.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Leader\LeaderEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Leader\ListLeader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -99,6 +111,9 @@
     <Compile Include="Elements\Document\DocumentControl.xaml.cs">
       <DependentUpon>DocumentControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Elements\Leader\LeaderControl.xaml.cs">
+      <DependentUpon>LeaderControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Elements\Supplier\SupplierControl.xaml.cs">
       <DependentUpon>SupplierControl.xaml</DependentUpon>
     </Compile>
@@ -113,6 +128,12 @@
     </Compile>
     <Compile Include="Pages\Document\ListDocument.xaml.cs">
       <DependentUpon>ListDocument.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Leader\LeaderEdit.xaml.cs">
+      <DependentUpon>LeaderEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Leader\ListLeader.xaml.cs">
+      <DependentUpon>ListLeader.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Supply\ListSupply.xaml.cs">
       <DependentUpon>ListSupply.xaml</DependentUpon>
@@ -197,6 +218,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\leader.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

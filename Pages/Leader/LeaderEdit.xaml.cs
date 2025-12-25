@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace praktika16.Pages.Worker
+namespace praktika16.Pages.Leader
 {
     /// <summary>
-    /// Логика взаимодействия для ListWorker.xaml
+    /// Логика взаимодействия для LeaderEdit.xaml
     /// </summary>
-    public partial class ListWorker : Page
+    public partial class LeaderEdit : Page
     {
-        public ListWorker()
+        public LeaderEdit()
         {
             InitializeComponent();
-        }
-
-        private void search(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
