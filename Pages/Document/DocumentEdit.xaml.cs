@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace praktika16.Pages
+namespace praktika16.Pages.Document
 {
     /// <summary>
-    /// Логика взаимодействия для ListSupply.xaml
+    /// Логика взаимодействия для DocumentEdit.xaml
     /// </summary>
-    public partial class ListSupply : Page
+    public partial class DocumentEdit : Page
     {
-        public ListSupply()
+        public DocumentEdit()
         {
             InitializeComponent();
-        }
-
-        private void search(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

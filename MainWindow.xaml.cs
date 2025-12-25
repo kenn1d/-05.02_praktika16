@@ -26,7 +26,7 @@ namespace praktika16
         {
             InitializeComponent();
             init = this;
-            frame.Navigate(new Pages.List());
+            frame.Navigate(new Pages.Document.DocumentEdit());
         }
     }
 }

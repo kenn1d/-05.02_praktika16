@@ -56,6 +56,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Elements\Document\DocumentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Elements\Supplier\SupplierControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -64,11 +68,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Document\DocumentEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Document\ListDocument.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Supply\ListSupply.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Supplier\SupplierEdit.xaml">
+    <Page Include="Pages\SupplierEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -80,16 +92,25 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Elements\Document\DocumentControl.xaml.cs">
+      <DependentUpon>DocumentControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Elements\Supplier\SupplierControl.xaml.cs">
       <DependentUpon>SupplierControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Elements\Supply\SupplyControl.xaml.cs">
       <DependentUpon>SupplyControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Document\DocumentEdit.xaml.cs">
+      <DependentUpon>DocumentEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Document\ListDocument.xaml.cs">
+      <DependentUpon>ListDocument.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Supply\ListSupply.xaml.cs">
       <DependentUpon>ListSupply.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Supplier\SupplierEdit.xaml.cs">
+    <Compile Include="Pages\SupplierEdit.xaml.cs">
       <DependentUpon>SupplierEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
@@ -100,7 +121,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Supplier\List.xaml">
+    <Page Include="Pages\List.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -113,7 +134,7 @@
     <Compile Include="Pages\Authorization.xaml.cs">
       <DependentUpon>Authorization.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Supplier\List.xaml.cs">
+    <Compile Include="Pages\List.xaml.cs">
       <DependentUpon>List.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Supply\SupplyEdit.xaml.cs">
@@ -150,5 +171,9 @@
   <ItemGroup>
     <Resource Include="Images\inventory.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-black.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

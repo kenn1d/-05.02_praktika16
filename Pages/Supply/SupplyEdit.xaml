@@ -68,9 +68,6 @@
                           Foreground="#212121"
                           Height="40"
                           VerticalContentAlignment="Center">
-                    <ComboBoxItem Content="Договор №1"/>
-                    <ComboBoxItem Content="Договор №2"/>
-                    <ComboBoxItem Content="Договор №3"/>
                 </ComboBox>
             </StackPanel>
 
@@ -88,10 +85,6 @@
                           Foreground="#212121"
                           Height="40"
                           VerticalContentAlignment="Center">
-                    <ComboBoxItem Content="Ожидается"/>
-                    <ComboBoxItem Content="В пути"/>
-                    <ComboBoxItem Content="Доставлено"/>
-                    <ComboBoxItem Content="Отменено"/>
                 </ComboBox>
             </StackPanel>
 
@@ -109,9 +102,6 @@
                           Foreground="#212121"
                           Height="40"
                           VerticalContentAlignment="Center">
-                    <ComboBoxItem Content="ООО 'Поставщик 1'"/>
-                    <ComboBoxItem Content="ООО 'Поставщик 2'"/>
-                    <ComboBoxItem Content="ООО 'Поставщик 3'"/>
                 </ComboBox>
             </StackPanel>
 
@@ -129,9 +119,6 @@
                           Foreground="#212121"
                           Height="40"
                           VerticalContentAlignment="Center">
-                    <ComboBoxItem Content="Иванов И.И."/>
-                    <ComboBoxItem Content="Петров П.П."/>
-                    <ComboBoxItem Content="Сидоров С.С."/>
                 </ComboBox>
             </StackPanel>
 
@@ -149,9 +136,6 @@
                           Foreground="#212121"
                           Height="40"
                           VerticalContentAlignment="Center">
-                    <ComboBoxItem Content="Алексеев А.А."/>
-                    <ComboBoxItem Content="Борисов Б.Б."/>
-                    <ComboBoxItem Content="Васильев В.В."/>
                 </ComboBox>
             </StackPanel>
         </Grid>

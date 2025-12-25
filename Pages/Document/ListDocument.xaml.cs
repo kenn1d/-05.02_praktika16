@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace praktika16.Pages
+namespace praktika16.Pages.Document
 {
     /// <summary>
-    /// Логика взаимодействия для ListSupply.xaml
+    /// Логика взаимодействия для ListDocument.xaml
     /// </summary>
-    public partial class ListSupply : Page
+    public partial class ListDocument : Page
     {
-        public ListSupply()
+        public ListDocument()
         {
             InitializeComponent();
         }
