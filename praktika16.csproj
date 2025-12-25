@@ -64,6 +64,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Elements\Product\ProductOnInventoryControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Elements\Supplier\SupplierControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +96,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Product\ListProductOnInventory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Product\ProductOnInventoryEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Supply\ListSupply.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -114,6 +126,9 @@
     <Compile Include="Elements\Leader\LeaderControl.xaml.cs">
       <DependentUpon>LeaderControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Elements\Product\ProductOnInventoryControl.xaml.cs">
+      <DependentUpon>ProductOnInventoryControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Elements\Supplier\SupplierControl.xaml.cs">
       <DependentUpon>SupplierControl.xaml</DependentUpon>
     </Compile>
@@ -134,6 +149,12 @@
     </Compile>
     <Compile Include="Pages\Leader\ListLeader.xaml.cs">
       <DependentUpon>ListLeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Product\ListProductOnInventory.xaml.cs">
+      <DependentUpon>ListProductOnInventory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Product\ProductOnInventoryEdit.xaml.cs">
+      <DependentUpon>ProductOnInventoryEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Supply\ListSupply.xaml.cs">
       <DependentUpon>ListSupply.xaml</DependentUpon>
@@ -221,6 +242,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\leader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\warehouse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
