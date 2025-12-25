@@ -64,7 +64,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\SupplierEdit.xaml">
+    <Page Include="Pages\Supply\ListSupply.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Supplier\SupplierEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -82,7 +86,10 @@
     <Compile Include="Elements\Supply\SupplyControl.xaml.cs">
       <DependentUpon>SupplyControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\SupplierEdit.xaml.cs">
+    <Compile Include="Pages\Supply\ListSupply.xaml.cs">
+      <DependentUpon>ListSupply.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Supplier\SupplierEdit.xaml.cs">
       <DependentUpon>SupplierEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
@@ -93,7 +100,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\List.xaml">
+    <Page Include="Pages\Supplier\List.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Supply\SupplyEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -102,8 +113,11 @@
     <Compile Include="Pages\Authorization.xaml.cs">
       <DependentUpon>Authorization.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\List.xaml.cs">
+    <Compile Include="Pages\Supplier\List.xaml.cs">
       <DependentUpon>List.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Supply\SupplyEdit.xaml.cs">
+      <DependentUpon>SupplyEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
