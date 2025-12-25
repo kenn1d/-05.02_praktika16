@@ -102,10 +102,6 @@
                               Foreground="#212121"
                               Height="40"
                               VerticalContentAlignment="Center">
-                        <ComboBoxItem Content="SP-2023-001"/>
-                        <ComboBoxItem Content="SP-2023-002"/>
-                        <ComboBoxItem Content="SP-2023-003"/>
-                        <ComboBoxItem Content="SP-2023-004"/>
                     </ComboBox>
                 </StackPanel>
             </Grid>
