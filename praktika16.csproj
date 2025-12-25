@@ -68,6 +68,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Elements\Worker\WorkerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Document\DocumentEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,6 +105,9 @@
     <Compile Include="Elements\Supply\SupplyControl.xaml.cs">
       <DependentUpon>SupplyControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Elements\Worker\WorkerControl.xaml.cs">
+      <DependentUpon>WorkerControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Document\DocumentEdit.xaml.cs">
       <DependentUpon>DocumentEdit.xaml</DependentUpon>
     </Compile>
@@ -129,6 +136,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Worker\ListWorker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Worker\WorkerEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\Authorization.xaml.cs">
@@ -139,6 +154,12 @@
     </Compile>
     <Compile Include="Pages\Supply\SupplyEdit.xaml.cs">
       <DependentUpon>SupplyEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Worker\ListWorker.xaml.cs">
+      <DependentUpon>ListWorker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Worker\WorkerEdit.xaml.cs">
+      <DependentUpon>WorkerEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -174,6 +195,8 @@
   <ItemGroup>
     <Resource Include="Images\icon-black.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\worker.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
