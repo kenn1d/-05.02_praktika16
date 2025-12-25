@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace praktika16.Pages
+namespace praktika16.Elements.Supplier
 {
     /// <summary>
-    /// Логика взаимодействия для List.xaml
+    /// Логика взаимодействия для SupplierEdit.xaml
     /// </summary>
-    public partial class List : Page
+    public partial class SupplierEdit : Page
     {
-        public List()
+        public SupplierEdit()
         {
             InitializeComponent();
-        }
-
-        private void search(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

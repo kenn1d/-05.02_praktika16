@@ -33,6 +33,7 @@
                        Height="24"/>
 
             <TextBox Grid.Column="1"
+                     TextChanged="search"
                      Name="SearchBox"
                      Background="Transparent"
                      BorderThickness="1"
@@ -93,19 +94,35 @@
                         <Setter Property="CornerRadius" Value="4"/>
                     </Style>
                 </Button.Resources>
-
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="#2196F3"/>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#1976D2"/>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
             </Button>
-            
+
+            <Label FontSize="24"
+                   Content="Список поставщиков"
+                   Height="40"
+                   FontWeight="SemiBold"    
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Left"
+                   Margin="125, 0, 0, 0"/>
+
+            <Button Content="Далее"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Bottom"
+                    Background="#2196F3"
+                    Foreground="White"
+                    BorderThickness="0"
+                    FontSize="14"
+                    FontWeight="SemiBold"
+                    Width="120"
+                    Height="40"
+                    Padding="0"
+                    Cursor="Hand" Margin="0, 0, 125, 0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="4"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
             <Button Content="Выйти"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Bottom"
@@ -123,18 +140,6 @@
                         <Setter Property="CornerRadius" Value="4"/>
                     </Style>
                 </Button.Resources>
-
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="#F44336"/>
-                        <Setter Property="Foreground" Value="White"/>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#D32F2F"/>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
             </Button>
 
         </Grid>
