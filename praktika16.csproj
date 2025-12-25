@@ -68,6 +68,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Elements\Product\ProductOnSaleControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Elements\Supplier\SupplierControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -100,7 +104,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Product\ListProductOnSale.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Product\ProductOnInventoryEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Product\ProductOnSaleEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,6 +141,9 @@
     <Compile Include="Elements\Product\ProductOnInventoryControl.xaml.cs">
       <DependentUpon>ProductOnInventoryControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Elements\Product\ProductOnSaleControl.xaml.cs">
+      <DependentUpon>ProductOnSaleControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Elements\Supplier\SupplierControl.xaml.cs">
       <DependentUpon>SupplierControl.xaml</DependentUpon>
     </Compile>
@@ -153,8 +168,14 @@
     <Compile Include="Pages\Product\ListProductOnInventory.xaml.cs">
       <DependentUpon>ListProductOnInventory.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Product\ListProductOnSale.xaml.cs">
+      <DependentUpon>ListProductOnSale.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Product\ProductOnInventoryEdit.xaml.cs">
       <DependentUpon>ProductOnInventoryEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Product\ProductOnSaleEdit.xaml.cs">
+      <DependentUpon>ProductOnSaleEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Supply\ListSupply.xaml.cs">
       <DependentUpon>ListSupply.xaml</DependentUpon>
@@ -245,6 +266,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sale.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
