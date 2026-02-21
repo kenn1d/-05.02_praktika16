@@ -70,10 +70,6 @@
                              Foreground="#212121"
                              Height="40"
                              VerticalContentAlignment="Center"/>
-                    <TextBlock Text="Укажите количество с единицей измерения (л., шт., кг.)"
-                               FontSize="11"
-                               Foreground="#666"
-                               Margin="0,5,0,0"/>
                 </StackPanel>
 
                 <StackPanel Grid.Row="2" Margin="0,0,0,20">

@@ -36,7 +36,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Row="0" Margin="0,0,0,20">
@@ -56,10 +56,10 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="1" Margin="0,0,0,20">
-                    <TextBlock Text="Номер поставки"
+                    <TextBlock
                                FontSize="14"
                                Foreground="#1565C0"
-                               Margin="0,0,0,5"/>
+                               Margin="0,0,0,5"><Run Language="ru-ru" Text="Список позиций"/></TextBlock>
                     <ComboBox Name="SupplyNumberComboBox"
                               Background="White"
                               BorderBrush="#64B5F6"
@@ -73,7 +73,7 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="2">
-                    <TextBlock Text="Содержимое документа"
+                    <TextBlock Text="Серийный номер поставки"
                                FontSize="14"
                                Foreground="#1565C0"
                                Margin="0,0,0,5"/>
@@ -84,13 +84,12 @@
                              Padding="10"
                              FontSize="14"
                              Foreground="#212121"
-                             MinHeight="200"
+                             Height="40"
                              VerticalContentAlignment="Top"
                              HorizontalContentAlignment="Left"
                              TextWrapping="Wrap"
                              AcceptsReturn="True"
-                             AcceptsTab="True"
-                             VerticalScrollBarVisibility="Auto">
+                             AcceptsTab="True">
                     </TextBox>
                 </StackPanel>
             </Grid>

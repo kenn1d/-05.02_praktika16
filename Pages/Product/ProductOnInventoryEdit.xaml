@@ -38,6 +38,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Row="0" Margin="0,0,0,20">
@@ -56,6 +57,22 @@
                              VerticalContentAlignment="Center"/>
                 </StackPanel>
 
+                <StackPanel Grid.Row="2" Margin="0,0,0,20">
+                    <TextBlock Text="Количество"
+                         FontSize="14"
+                         Foreground="#1565C0"
+                         Margin="0,0,0,5"/>
+                    <TextBox Name="Count"
+                         Background="White"
+                         BorderBrush="#64B5F6"
+                         BorderThickness="1"
+                         Padding="10"
+                         FontSize="14"
+                         Foreground="#212121"
+                         Height="40"
+                         VerticalContentAlignment="Center"/>
+                </StackPanel>
+
                 <StackPanel Grid.Row="1" Margin="0,0,0,20">
                     <TextBlock Text="Позиция на складе"
                                FontSize="14"
@@ -72,7 +89,7 @@
                              VerticalContentAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="2" Margin="0,0,0,20">
+                <StackPanel Grid.Row="3" Margin="0,0,0,20">
                     <TextBlock Text="Срок годности"
                                FontSize="14"
                                Foreground="#1565C0"
@@ -88,7 +105,7 @@
                                 VerticalContentAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="3">
+                <StackPanel Grid.Row="4">
                     <TextBlock Text="Поставка"
                                FontSize="14"
                                Foreground="#1565C0"
